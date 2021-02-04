@@ -10,14 +10,11 @@ import UIKit
 import SDWebImage
 
 class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
-    
     let image_max = 47
-    
     var commentArray = [String]()
     var imageURLArray = [String]()
     var recipeTypeArray = [String]()
     var recordedDateArray = [String]()
-    
     var comment = ""
     var image = ""
     var recipeType = ""
@@ -25,7 +22,6 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: 200, height: 200)
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
@@ -38,23 +34,20 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         super.viewDidLayoutSubviews()
         collectionView.frame = view.bounds
     }
-
+    
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
-
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return image_max
     }
-
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
-        
         cell.sd_internalSetImage(with: URL(string: imageURLArray[indexPath.row]), placeholderImage: UIImage(named: "noimage"), options: .continueInBackground, context: nil, setImageBlock: nil, progress: nil, completed: nil)
-        
         let imageView = cell.contentView.viewWithTag(1) as! UIImageView
         imageView.sd_setImage(with: URL(string: imageURLArray[indexPath.row]), placeholderImage: UIImage(named: "noimage"), options: .continueInBackground, context: nil, progress: nil, completed: nil)
-
         return cell
     }
     
@@ -63,15 +56,11 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         image = imageURLArray[indexPath.row]
         recipeType = recipeTypeArray[indexPath.row]
         recordedDate = recordedDateArray[indexPath.row]
-        
         performSegue(withIdentifier: "moveToPresentation", sender: nil)
     }
     
-    
-    
     //値を持たせて遷移
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         if segue.identifier == "moveToPresentation"{
             //インスタンス化
             let presentationVC = segue.destination as! PresentationViewController
@@ -80,7 +69,5 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
             presentationVC.recipeType = self.recipeType
             presentationVC.recordedDate = self.recordedDate
         }
-        
     }
-
 }
