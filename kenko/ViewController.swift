@@ -12,7 +12,6 @@ import SwiftyJSON
 import NVActivityIndicatorView
 
 class ViewController: UIViewController {
-
     var commentArray = [String]()
     var imageURLArray = [String]()
     var recipeTypeArray = [String]()
@@ -20,11 +19,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
-        
         startParse()
-        
         let indicatorView = NVActivityIndicatorView(frame: view.bounds)
         indicatorView.type = .orbit
         indicatorView.color = .darkGray
@@ -38,26 +34,15 @@ class ViewController: UIViewController {
         }
     }
     
-    
-    
     func startParse(){
         let urlString = "https://cooking-records.herokuapp.com/cooking_records?limit=47"
-        
         let encodeUrlString:String = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
-        
         //AlamoFireを使ってリクエストを投げる
         AF.request(encodeUrlString, method: .get, parameters: nil, encoding: JSONEncoding.default).responseJSON{
             (response) in
-            
-            //print(response)
-            
             switch response.result{
-                
             case .success:
-                
                 let json:JSON = JSON(response.data as Any)
-                //print(json)
-                
                 let resultCount:Int = json["pagination"]["total"].int!
                 
                 for i in 0 ..< resultCount{
@@ -76,9 +61,9 @@ class ViewController: UIViewController {
                     if imageURL != nil{
                         self.imageURLArray.append(imageURL!)
                     }
-                   if recipeType != nil{
-                    self.recipeTypeArray.append(recipeType!)
-                   }
+                    if recipeType != nil{
+                        self.recipeTypeArray.append(recipeType!)
+                    }
                     if recordedDate != nil{
                         self.recordedDateArray.append(recordedDate!)
                     }
@@ -86,7 +71,6 @@ class ViewController: UIViewController {
             case .failure(let error):
                 print(error)
             }
-            print(self.imageURLArray)
         }
     }
     
@@ -103,10 +87,6 @@ class ViewController: UIViewController {
             collectionVC.imageURLArray = self.imageURLArray
             collectionVC.recipeTypeArray = self.recipeTypeArray
             collectionVC.recordedDateArray = self.recordedDateArray
-            
         }
-        
     }
-    
-
 }
