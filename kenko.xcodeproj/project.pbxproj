@@ -1,0 +1,757 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43770C1825C30950001D1CC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43770C1725C30950001D1CC7 /* AppDelegate.swift */; };
+		43770C1A25C30950001D1CC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43770C1925C30950001D1CC7 /* SceneDelegate.swift */; };
+		43770C1F25C30950001D1CC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43770C1D25C30950001D1CC7 /* Main.storyboard */; };
+		43770C2125C30956001D1CC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43770C2025C30956001D1CC7 /* Assets.xcassets */; };
+		43770C2425C30956001D1CC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43770C2225C30956001D1CC7 /* LaunchScreen.storyboard */; };
+		43770C2F25C30956001D1CC7 /* kenkoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43770C2E25C30956001D1CC7 /* kenkoTests.swift */; };
+		43770C3A25C30956001D1CC7 /* kenkoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43770C3925C30956001D1CC7 /* kenkoUITests.swift */; };
+		43C98C7925C50B2300815149 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C98C7825C50B2200815149 /* CollectionViewController.swift */; };
+		43C98C7B25C596E100815149 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C98C7A25C596E100815149 /* ViewController.swift */; };
+		43C98C8325C8551200815149 /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C98C8225C8551200815149 /* PresentationViewController.swift */; };
+		5E99F1C7F8CD745C826284E8 /* Pods_kenko.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB059C1F86191098055BE88 /* Pods_kenko.framework */; };
+		6BB09095EC887341C7593782 /* Pods_kenko_kenkoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BC5A61EA0F5CDB2977E16F /* Pods_kenko_kenkoUITests.framework */; };
+		CA67893CF44DC7051B51660F /* Pods_kenkoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A21D24110401969E46976EDE /* Pods_kenkoTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43770C2B25C30956001D1CC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43770C0C25C30950001D1CC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43770C1325C30950001D1CC7;
+			remoteInfo = kenko;
+		};
+		43770C3625C30956001D1CC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43770C0C25C30950001D1CC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43770C1325C30950001D1CC7;
+			remoteInfo = kenko;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1AB059C1F86191098055BE88 /* Pods_kenko.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kenko.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3023150BF2FB55EDC12BC0F1 /* Pods-kenko-kenkoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kenko-kenkoUITests.debug.xcconfig"; path = "Target Support Files/Pods-kenko-kenkoUITests/Pods-kenko-kenkoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		42BC5A61EA0F5CDB2977E16F /* Pods_kenko_kenkoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kenko_kenkoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43770C1425C30950001D1CC7 /* kenko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kenko.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43770C1725C30950001D1CC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		43770C1925C30950001D1CC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		43770C1E25C30950001D1CC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43770C2025C30956001D1CC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43770C2325C30956001D1CC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		43770C2525C30956001D1CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43770C2A25C30956001D1CC7 /* kenkoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kenkoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43770C2E25C30956001D1CC7 /* kenkoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kenkoTests.swift; sourceTree = "<group>"; };
+		43770C3025C30956001D1CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43770C3525C30956001D1CC7 /* kenkoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kenkoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43770C3925C30956001D1CC7 /* kenkoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kenkoUITests.swift; sourceTree = "<group>"; };
+		43770C3B25C30956001D1CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43C98C7825C50B2200815149 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		43C98C7A25C596E100815149 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		43C98C8225C8551200815149 /* PresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationViewController.swift; sourceTree = "<group>"; };
+		70C4341F4397407F4C7AE369 /* Pods-kenkoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kenkoTests.debug.xcconfig"; path = "Target Support Files/Pods-kenkoTests/Pods-kenkoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7DA755DA9346E2F5E5BF1B66 /* Pods-kenkoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kenkoTests.release.xcconfig"; path = "Target Support Files/Pods-kenkoTests/Pods-kenkoTests.release.xcconfig"; sourceTree = "<group>"; };
+		A135F9DA902B52B54546970A /* Pods-kenko.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kenko.release.xcconfig"; path = "Target Support Files/Pods-kenko/Pods-kenko.release.xcconfig"; sourceTree = "<group>"; };
+		A21D24110401969E46976EDE /* Pods_kenkoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kenkoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF4398F7049F69B9EF2A8E37 /* Pods-kenko.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kenko.debug.xcconfig"; path = "Target Support Files/Pods-kenko/Pods-kenko.debug.xcconfig"; sourceTree = "<group>"; };
+		F7B0F7A090334FA7094052D5 /* Pods-kenko-kenkoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kenko-kenkoUITests.release.xcconfig"; path = "Target Support Files/Pods-kenko-kenkoUITests/Pods-kenko-kenkoUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43770C1125C30950001D1CC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E99F1C7F8CD745C826284E8 /* Pods_kenko.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43770C2725C30956001D1CC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA67893CF44DC7051B51660F /* Pods_kenkoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43770C3225C30956001D1CC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BB09095EC887341C7593782 /* Pods_kenko_kenkoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43770C0B25C30950001D1CC7 = {
+			isa = PBXGroup;
+			children = (
+				43770C1625C30950001D1CC7 /* kenko */,
+				43770C2D25C30956001D1CC7 /* kenkoTests */,
+				43770C3825C30956001D1CC7 /* kenkoUITests */,
+				43770C1525C30950001D1CC7 /* Products */,
+				766C2C78667729CB111F6562 /* Pods */,
+				8666B84EAFBCA3490662C242 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		43770C1525C30950001D1CC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43770C1425C30950001D1CC7 /* kenko.app */,
+				43770C2A25C30956001D1CC7 /* kenkoTests.xctest */,
+				43770C3525C30956001D1CC7 /* kenkoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43770C1625C30950001D1CC7 /* kenko */ = {
+			isa = PBXGroup;
+			children = (
+				43770C1725C30950001D1CC7 /* AppDelegate.swift */,
+				43770C1925C30950001D1CC7 /* SceneDelegate.swift */,
+				43C98C7825C50B2200815149 /* CollectionViewController.swift */,
+				43C98C7A25C596E100815149 /* ViewController.swift */,
+				43C98C8225C8551200815149 /* PresentationViewController.swift */,
+				43770C1D25C30950001D1CC7 /* Main.storyboard */,
+				43770C2025C30956001D1CC7 /* Assets.xcassets */,
+				43770C2225C30956001D1CC7 /* LaunchScreen.storyboard */,
+				43770C2525C30956001D1CC7 /* Info.plist */,
+			);
+			path = kenko;
+			sourceTree = "<group>";
+		};
+		43770C2D25C30956001D1CC7 /* kenkoTests */ = {
+			isa = PBXGroup;
+			children = (
+				43770C2E25C30956001D1CC7 /* kenkoTests.swift */,
+				43770C3025C30956001D1CC7 /* Info.plist */,
+			);
+			path = kenkoTests;
+			sourceTree = "<group>";
+		};
+		43770C3825C30956001D1CC7 /* kenkoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				43770C3925C30956001D1CC7 /* kenkoUITests.swift */,
+				43770C3B25C30956001D1CC7 /* Info.plist */,
+			);
+			path = kenkoUITests;
+			sourceTree = "<group>";
+		};
+		766C2C78667729CB111F6562 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF4398F7049F69B9EF2A8E37 /* Pods-kenko.debug.xcconfig */,
+				A135F9DA902B52B54546970A /* Pods-kenko.release.xcconfig */,
+				3023150BF2FB55EDC12BC0F1 /* Pods-kenko-kenkoUITests.debug.xcconfig */,
+				F7B0F7A090334FA7094052D5 /* Pods-kenko-kenkoUITests.release.xcconfig */,
+				70C4341F4397407F4C7AE369 /* Pods-kenkoTests.debug.xcconfig */,
+				7DA755DA9346E2F5E5BF1B66 /* Pods-kenkoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8666B84EAFBCA3490662C242 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AB059C1F86191098055BE88 /* Pods_kenko.framework */,
+				42BC5A61EA0F5CDB2977E16F /* Pods_kenko_kenkoUITests.framework */,
+				A21D24110401969E46976EDE /* Pods_kenkoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43770C1325C30950001D1CC7 /* kenko */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43770C3E25C30956001D1CC7 /* Build configuration list for PBXNativeTarget "kenko" */;
+			buildPhases = (
+				8BEE9F942239086C38BA0FDD /* [CP] Check Pods Manifest.lock */,
+				43770C1025C30950001D1CC7 /* Sources */,
+				43770C1125C30950001D1CC7 /* Frameworks */,
+				43770C1225C30950001D1CC7 /* Resources */,
+				2F1D75DDAA20C9032DA91771 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kenko;
+			productName = kenko;
+			productReference = 43770C1425C30950001D1CC7 /* kenko.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43770C2925C30956001D1CC7 /* kenkoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43770C4125C30956001D1CC7 /* Build configuration list for PBXNativeTarget "kenkoTests" */;
+			buildPhases = (
+				1A99DA7127F5D3BD16102F2D /* [CP] Check Pods Manifest.lock */,
+				43770C2625C30956001D1CC7 /* Sources */,
+				43770C2725C30956001D1CC7 /* Frameworks */,
+				43770C2825C30956001D1CC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43770C2C25C30956001D1CC7 /* PBXTargetDependency */,
+			);
+			name = kenkoTests;
+			productName = kenkoTests;
+			productReference = 43770C2A25C30956001D1CC7 /* kenkoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		43770C3425C30956001D1CC7 /* kenkoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43770C4425C30956001D1CC7 /* Build configuration list for PBXNativeTarget "kenkoUITests" */;
+			buildPhases = (
+				61EE0655A591A4804C684578 /* [CP] Check Pods Manifest.lock */,
+				43770C3125C30956001D1CC7 /* Sources */,
+				43770C3225C30956001D1CC7 /* Frameworks */,
+				43770C3325C30956001D1CC7 /* Resources */,
+				C722681B61DE6308688DD9C4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43770C3725C30956001D1CC7 /* PBXTargetDependency */,
+			);
+			name = kenkoUITests;
+			productName = kenkoUITests;
+			productReference = 43770C3525C30956001D1CC7 /* kenkoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43770C0C25C30950001D1CC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "葛西　翔太";
+				TargetAttributes = {
+					43770C1325C30950001D1CC7 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					43770C2925C30956001D1CC7 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 43770C1325C30950001D1CC7;
+					};
+					43770C3425C30956001D1CC7 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 43770C1325C30950001D1CC7;
+					};
+				};
+			};
+			buildConfigurationList = 43770C0F25C30950001D1CC7 /* Build configuration list for PBXProject "kenko" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43770C0B25C30950001D1CC7;
+			productRefGroup = 43770C1525C30950001D1CC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43770C1325C30950001D1CC7 /* kenko */,
+				43770C2925C30956001D1CC7 /* kenkoTests */,
+				43770C3425C30956001D1CC7 /* kenkoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43770C1225C30950001D1CC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43770C2425C30956001D1CC7 /* LaunchScreen.storyboard in Resources */,
+				43770C2125C30956001D1CC7 /* Assets.xcassets in Resources */,
+				43770C1F25C30950001D1CC7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43770C2825C30956001D1CC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43770C3325C30956001D1CC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A99DA7127F5D3BD16102F2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kenkoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F1D75DDAA20C9032DA91771 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kenko/Pods-kenko-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kenko/Pods-kenko-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kenko/Pods-kenko-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61EE0655A591A4804C684578 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kenko-kenkoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BEE9F942239086C38BA0FDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kenko-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C722681B61DE6308688DD9C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kenko-kenkoUITests/Pods-kenko-kenkoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kenko-kenkoUITests/Pods-kenko-kenkoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kenko-kenkoUITests/Pods-kenko-kenkoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43770C1025C30950001D1CC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43C98C8325C8551200815149 /* PresentationViewController.swift in Sources */,
+				43770C1825C30950001D1CC7 /* AppDelegate.swift in Sources */,
+				43770C1A25C30950001D1CC7 /* SceneDelegate.swift in Sources */,
+				43C98C7925C50B2300815149 /* CollectionViewController.swift in Sources */,
+				43C98C7B25C596E100815149 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43770C2625C30956001D1CC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43770C2F25C30956001D1CC7 /* kenkoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43770C3125C30956001D1CC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43770C3A25C30956001D1CC7 /* kenkoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43770C2C25C30956001D1CC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43770C1325C30950001D1CC7 /* kenko */;
+			targetProxy = 43770C2B25C30956001D1CC7 /* PBXContainerItemProxy */;
+		};
+		43770C3725C30956001D1CC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43770C1325C30950001D1CC7 /* kenko */;
+			targetProxy = 43770C3625C30956001D1CC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43770C1D25C30950001D1CC7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43770C1E25C30950001D1CC7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		43770C2225C30956001D1CC7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43770C2325C30956001D1CC7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43770C3C25C30956001D1CC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43770C3D25C30956001D1CC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43770C3F25C30956001D1CC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF4398F7049F69B9EF2A8E37 /* Pods-kenko.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QH7W9TVP5;
+				INFOPLIST_FILE = kenko/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.self.kenko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		43770C4025C30956001D1CC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A135F9DA902B52B54546970A /* Pods-kenko.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QH7W9TVP5;
+				INFOPLIST_FILE = kenko/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.self.kenko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		43770C4225C30956001D1CC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70C4341F4397407F4C7AE369 /* Pods-kenkoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QH7W9TVP5;
+				INFOPLIST_FILE = kenkoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.self.kenkoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kenko.app/kenko";
+			};
+			name = Debug;
+		};
+		43770C4325C30956001D1CC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DA755DA9346E2F5E5BF1B66 /* Pods-kenkoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QH7W9TVP5;
+				INFOPLIST_FILE = kenkoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.self.kenkoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kenko.app/kenko";
+			};
+			name = Release;
+		};
+		43770C4525C30956001D1CC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3023150BF2FB55EDC12BC0F1 /* Pods-kenko-kenkoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QH7W9TVP5;
+				INFOPLIST_FILE = kenkoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.self.kenkoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kenko;
+			};
+			name = Debug;
+		};
+		43770C4625C30956001D1CC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7B0F7A090334FA7094052D5 /* Pods-kenko-kenkoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QH7W9TVP5;
+				INFOPLIST_FILE = kenkoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.self.kenkoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kenko;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43770C0F25C30950001D1CC7 /* Build configuration list for PBXProject "kenko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43770C3C25C30956001D1CC7 /* Debug */,
+				43770C3D25C30956001D1CC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43770C3E25C30956001D1CC7 /* Build configuration list for PBXNativeTarget "kenko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43770C3F25C30956001D1CC7 /* Debug */,
+				43770C4025C30956001D1CC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43770C4125C30956001D1CC7 /* Build configuration list for PBXNativeTarget "kenkoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43770C4225C30956001D1CC7 /* Debug */,
+				43770C4325C30956001D1CC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43770C4425C30956001D1CC7 /* Build configuration list for PBXNativeTarget "kenkoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43770C4525C30956001D1CC7 /* Debug */,
+				43770C4625C30956001D1CC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43770C0C25C30950001D1CC7 /* Project object */;
+}
