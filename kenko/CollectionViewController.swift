@@ -30,11 +30,6 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         collectionView.collectionViewLayout = layout
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        collectionView.frame = view.bounds
-    }
-    
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -59,10 +54,8 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         performSegue(withIdentifier: "moveToPresentation", sender: nil)
     }
     
-    //値を持たせて遷移
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "moveToPresentation"{
-            //インスタンス化
             let presentationVC = segue.destination as! PresentationViewController
             presentationVC.comment = self.comment
             presentationVC.image = self.image

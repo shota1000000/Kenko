@@ -19,10 +19,6 @@ class PresentationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(image)
-        print(comment)
-        print(recipeType)
-        print(recordedDate)
         view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
         dishImageView.sd_setImage(with: URL(string: image), placeholderImage: UIImage(named: "noimage"), options: .continueInBackground, context: nil, progress: nil, completed: nil)
         commentTextView.text = comment

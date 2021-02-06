@@ -37,7 +37,6 @@ class ViewController: UIViewController {
     func startParse(){
         let urlString = "https://cooking-records.herokuapp.com/cooking_records?limit=47"
         let encodeUrlString:String = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
-        //AlamoFireを使ってリクエストを投げる
         AF.request(encodeUrlString, method: .get, parameters: nil, encoding: JSONEncoding.default).responseJSON{
             (response) in
             switch response.result{
@@ -77,11 +76,9 @@ class ViewController: UIViewController {
     @IBAction func albumButton(_ sender: Any) {
         performSegue(withIdentifier: "moveToCollection", sender: nil)
     }
-    //値を持たせて遷移
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "moveToCollection"{
-            //インスタンス化
             let collectionVC = segue.destination as! CollectionViewController
             collectionVC.commentArray = self.commentArray
             collectionVC.imageURLArray = self.imageURLArray
